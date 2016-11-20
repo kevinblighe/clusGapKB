@@ -14,11 +14,11 @@ NB - clusGapKB only tested in Microsoft R Open (https://mran.microsoft.com/open/
 
 # corKB - parallelised correlation calculation for large matrices
  - Install package 'doParallel'
- - Set number of CPU cores with
-   cpucores <- 4; setMKLthreads(cpucores)
- - Set CPU core parameters that mclapply uses
-   cores <- makeCluster(detectCores(), type='PSOCK')
-   registerDoParallel(cores)
+ - Set number of CPU cores with:
+   cpucores <- 4; setMKLthreads(cpucores)\n
+ - Set CPU core parameters that mclapply uses:\n
+   cores <- makeCluster(detectCores(), type='PSOCK')\n
+   registerDoParallel(cores)\
    Sys.setenv("MC_CORES"=cpucores)
  - Create random data matrices:
    x <- matrix(rexp(2000, rate=0.1), ncol=20); y <- matrix(rexp(4000, rate=0.1), ncol=40)
