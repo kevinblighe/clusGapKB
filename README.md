@@ -1,5 +1,5 @@
 # ParallelisedR
-Existing R functions which I have edited to enable parallel processing
+R functions which I have edited to enable parallel processing
 
 # Instructions
 # clusGapKB - pallelised Gap statistic calculation and clustering
