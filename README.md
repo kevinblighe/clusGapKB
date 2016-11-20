@@ -7,7 +7,7 @@ R functions which I have edited to enable parallel processing
  - Set number of CPU cores with:
 <br>cpucores <- 12; options("mc.cores"=cpucores)<br>
 <i>*for Microsoft R open</i>
- - For PAM, create custom function that just performs the clustering and ONLY retains the medoids for each k:<br>
+ - For PAM, create custom function that just performs the clustering and <i>ONLY</i> retains the medoids for each <i>k</i>:<br>
  CustomPAM <- function(x,k) list(cluster=pam(x, k, diss=FALSE, metric="euclidean", medoids=NULL, stand=FALSE, cluster.only=TRUE, do.swap=TRUE, keep.diss=FALSE, keep.data=FALSE, pamonce=TRUE, trace.lev=0))
  - Execute function with:<br>gap <- clusGapKB(df, FUNcluster=CustomPAM, K.max=20, B=5)<br>
  NB - clusGapKB only tested in Microsoft R Open (https://mran.microsoft.com/open/)
