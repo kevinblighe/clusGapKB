@@ -1,8 +1,8 @@
 # ParallelisedR
 R functions which I have edited to enable parallel processing
 
-# Instructions
-# clusGapKB - pallelised Gap statistic calculation and clustering
+<h1>Instructions</h1>
+<h2>clusGapKB - parallelised Gap statistic calculation and clustering</h2>
 <ol type="i">
 <li>Install package 'parallel'</li>
 <li>Set number of CPU cores with:<br>
@@ -15,7 +15,7 @@ gap <- clusGapKB(df, FUNcluster=CustomPAM, K.max=20, B=5)<br>
 <i>NB - clusGapKB only tested in Microsoft R Open (https://mran.microsoft.com/open/)</i></li>
 </ol>
 
-# corKB - parallelised correlation calculation for large matrices
+<h2>corKB - parallelised correlation calculation for large matrices</h2>
 <ol type="i">
 <li>Install package 'doParallel'</li>
 <li>Set number of CPU cores with:<br>
