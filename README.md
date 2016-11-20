@@ -6,7 +6,7 @@ R functions which I have edited to enable parallel processing
 <ol type="i">
 <li>Install package 'parallel'</li>
 <li>Set number of CPU cores with:<br>
-cpucores <- 12; options("mc.cores"=cpucores)<br>
+<code>cpucores <- 12; options("mc.cores"=cpucores)</code>
 <i>*for Microsoft R open</i></li>
 <li>For PAM, create custom function that just performs the clustering and <i>ONLY</i> retains the medoids for each <i>k</i>:<br>
 CustomPAM <- function(x,k) list(cluster=pam(x, k, diss=FALSE, metric="euclidean", medoids=NULL, stand=FALSE, cluster.only=TRUE, do.swap=TRUE, keep.diss=FALSE, keep.data=FALSE, pamonce=TRUE, trace.lev=0))</li>
