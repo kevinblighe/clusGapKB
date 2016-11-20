@@ -23,7 +23,8 @@ R functions which I have edited to enable parallel processing
 <code>cpucores <- 4; setMKLthreads(cpucores)</code><br>
 <i>*for Microsoft R open</i></li>
 <li>Set CPU core parameters that mclapply uses:<br>
-<code>cores <- makeCluster(detectCores(), type='PSOCK'); registerDoParallel(cores); Sys.setenv("MC_CORES"=cpucores)</code></li>
+<code>cores <- makeCluster(detectCores(), type='PSOCK'); registerDoParallel(cores); Sys.setenv("MC_CORES"=cpucores)</code><br>
+<i>*for standard R in Windows</i></li>
 <li>Create random data matrices:<br>
 <code>x <- matrix(rexp(2000, rate=0.1), ncol=20); y <- matrix(rexp(4000, rate=0.1), ncol=40)</code></li>
 <li>Call function:<br>
