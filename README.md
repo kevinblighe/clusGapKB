@@ -22,5 +22,5 @@ R functions which I have edited to enable parallel processing
  - Create random data matrices:
 <br>x <- matrix(rexp(2000, rate=0.1), ncol=20); y <- matrix(rexp(4000, rate=0.1), ncol=40)
  - Call function:
-<br>cormatrix1 <- corKB(x, x); cormatrix2 <- corKB(x, y)<br>
-NB - corKB should function in both Microsoft R Open (https://mran.microsoft.com/open/) and base R
+<br>cormatrix1 <- corKB(x, x, use="pairwise.complete.obs", method="pearson"); cormatrix2 <- corKB(x, y)<br>
+NB - corKB should function in both Microsoft R Open (https://mran.microsoft.com/open/) and standard R
