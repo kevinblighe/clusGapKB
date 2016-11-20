@@ -7,5 +7,5 @@ corKB <- function(x, y, use="pairwise.complete.obs", method="pearson")
 
 	cormatrix <- mclapply(mylist, function(x) cor(x, y, use=use, method=method))
 
-	return(cormatrix)[[1]]
+	return(cormatrix[[1]])
 }
