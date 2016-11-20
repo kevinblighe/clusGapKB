@@ -1,13 +1,4 @@
 
-#Install the parallel processing packges required for certain functions not covered by MRO's parallel processing capabilites
-#NB - this masks 'cluster', 'matrix', 'nlme', and 'survival'
-#biocLite("parallel")
-library(parallel)
-
-#Set number of CPU cores 
-cpucores <- 12
-options("mc.cores"=cpucores)
-
 clusGapKB <- function (x, FUNcluster, K.max, B=100, d.power=1, verbose=interactive(), ...)
 {
 	stopifnot(is.function(FUNcluster), length(dim(x))==2, K.max>=2, (n<-nrow(x))>=1, ncol(x)>=1)
