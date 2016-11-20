@@ -24,7 +24,7 @@ cpucores <- 4; setMKLthreads(cpucores)<br>
 <li>Set CPU core parameters that mclapply uses:<br>
 cores <- makeCluster(detectCores(), type='PSOCK'); registerDoParallel(cores); Sys.setenv("MC_CORES"=cpucores)</li>
 <li>Create random data matrices:<br>
-x <- matrix(rexp(2000, rate=0.1), ncol=20); y <- matrix(rexp(4000, rate=0.1), ncol=40)<li>
+x <- matrix(rexp(2000, rate=0.1), ncol=20); y <- matrix(rexp(4000, rate=0.1), ncol=40)</li>
 <li>Call function:<br>
 cormatrix1 <- corKB(x, x, use="pairwise.complete.obs", method="pearson"); cormatrix2 <- corKB(x, y)<br>
 <i>NB - corKB should function in both Microsoft R Open (https://mran.microsoft.com/open/) and standard R</i></li>
