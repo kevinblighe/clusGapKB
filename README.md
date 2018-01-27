@@ -1,6 +1,7 @@
 # clusGapKB
 <h1>Parallelised Gap statistic (Tibshirani et al., 2001) calculation and clustering</h1>
 <i>NB - clusGapKB only tested in Microsoft R Open (https://mran.microsoft.com/open/)</i>
+<br>
 <ol type="i">
 <li>Install package 'parallel'</li>
 <li>Set number of CPU cores with:
@@ -23,6 +24,7 @@ Tibshirani R, Walther G, Hastie T (2001), Estimating the number of data clusters
 
 <h1>corKB - parallelised correlation calculation for large matrices</h1>
 <i>NB - corKB should function in both Microsoft R Open (https://mran.microsoft.com/open/) and standard R</i>
+<br>
 <ol type="i">
 <li>Install package 'doParallel'</li>
 <li>Set number of CPU cores with:
