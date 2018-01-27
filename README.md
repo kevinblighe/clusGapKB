@@ -1,5 +1,5 @@
-<h1>Instructions</h1>
-<h2>clusGapKB - parallelised Gap statistic (Tibshirani et al., 2001) calculation and clustering</h2>
+# clusGapKB
+<h1>Parallelised Gap statistic (Tibshirani et al., 2001) calculation and clustering</h1>
 <i>NB - clusGapKB only tested in Microsoft R Open (https://mran.microsoft.com/open/)</i>
 <ol type="i">
 <li>Install package 'parallel'</li>
@@ -16,12 +16,12 @@
 <br>
 </li>
 </ol>
-<h3>References:</h3>
+<h2>References:</h2>
 Tibshirani R, Walther G, Hastie T (2001), Estimating the number of data clusters via the Gap statistic, Journal of the Royal Statistical Society B. 63: 411–423.
 
 <hr>
 
-<h2>corKB - parallelised correlation calculation for large matrices</h2>
+<h1>corKB - parallelised correlation calculation for large matrices</h1>
 <i>NB - corKB should function in both Microsoft R Open (https://mran.microsoft.com/open/) and standard R</i>
 <ol type="i">
 <li>Install package 'doParallel'</li>
