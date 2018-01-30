@@ -3,7 +3,7 @@
 <br>
 <ol type="i">
 <li>Install package 'parallel'</li>
-<li>Set CPU core parameters that mclapply uses:
+<li>Set CPU core parameters that mclapply (parallel) uses:
 <br>
 <code>cpucores <- makeCluster(detectCores(), type='PSOCK') ;</code>
 <br>
