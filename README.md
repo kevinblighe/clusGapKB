@@ -5,9 +5,11 @@
 <li>Install package 'parallel'</li>
 <li>Set CPU core parameters that mclapply uses:
 <br>
-<code>cpucores <- makeCluster(detectCores(), type='PSOCK') ;<br>
-registerDoParallel(cpucores) ;<br>
-Sys.setenv("MC_CORES"=cpucores) ;</code>
+<code>cpucores <- makeCluster(detectCores(), type='PSOCK') ;</code>
+<br>
+<code>registerDoParallel(cpucores) ;</code>
+<br>
+<code>Sys.setenv("MC_CORES"=cpucores) ;</code>
 <br>
 <i>*for standard R in Windows</i></li>
 <li>For PAM, create custom function that just performs the clustering and <i>ONLY</i> retains the medoids for each <i>k</i>:
