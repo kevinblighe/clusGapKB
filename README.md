@@ -35,3 +35,6 @@ Tibshirani R, Walther G, Hastie T (2001), Estimating the number of data clusters
 <br>
 <code>cormatrix1 <- corKB(x, x, use="pairwise.complete.obs", method="pearson"); cormatrix2 <- corKB(x, y)</code></li>
 </ol>
+
+<h1>Credits</h1>
+Kevin Blighe
