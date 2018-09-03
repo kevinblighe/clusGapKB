@@ -2,16 +2,19 @@
 <h1>Parallelised Gap statistic (Tibshirani et al., 2001) calculation and clustering</h1>
 <br>
 <ol type="i">
-<li>Install package 'parallel'</li>
-<li>Set cores for parallel related functions:
+  <li>Load <i>BiocParallel</i>
+<br>
+    <code>require(BiocParallel)</code></li>
+<br>
+<li>Set cores for <i>parallel</i> related functions:
 <br>
 <code>cpucores <- 12; require(parallel); options("mc.cores"=cpucores)</code>
 <br>
-<li>Set cores for doParallel related functions:
+  <li>Set cores for <i>doParallel</i> related functions:
 <br>
-<code>require(doParallel); registerDoParallel(cpucores)</code>
+    <code>require(doParallel); registerDoParallel(cpucores)</code></li>
 <br>
-  <i>Note: you can automatically detect the number of CPU cores with <code>cpucores <- makeCluster(detectCores(), type='PSOCK'</code></i>
+  <i>Note: you can automatically detect the number of CPU cores with <code>cpucores <- makeCluster(detectCores(), type='PSOCK'</code></i></li>
   <br><br>
 <li>For PAM, create custom function that just performs the clustering and <i>ONLY</i> retains the medoids for each <i>k</i>:
 <br>
