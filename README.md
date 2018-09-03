@@ -12,7 +12,7 @@
 <code>require(doParallel); registerDoParallel(cpucores)</code>
 <br>
   <i>Note: you can automatically detect the number of CPU cores with <code>cpucores <- makeCluster(detectCores(), type='PSOCK'</code></i>
-  <br>:
+  <br><br>
 <li>For PAM, create custom function that just performs the clustering and <i>ONLY</i> retains the medoids for each <i>k</i>:
 <br>
 <code>CustomPAM <- function(x,k) list(cluster=pam(x, k, diss=FALSE, metric="euclidean", medoids=NULL, stand=FALSE, cluster.only=TRUE, do.swap=TRUE, keep.diss=FALSE, keep.data=FALSE, pamonce=TRUE, trace.lev=0))</code></li>
