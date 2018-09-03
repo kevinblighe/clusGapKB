@@ -20,19 +20,6 @@
 <h2>References:</h2>
 Tibshirani R, Walther G, Hastie T (2001), Estimating the number of data clusters via the Gap statistic, Journal of the Royal Statistical Society B. 63: 411–423.
 
-<hr>
-
-<h1>corKB - parallelised correlation calculation for large matrices</h1>
-<br>
-<ol type="i">
-<li>Create random data matrices:
-<br>
-<code>x <- matrix(rexp(2000, rate=0.1), ncol=20); y <- matrix(rexp(4000, rate=0.1), ncol=40)</code></li>
-<li>Call function:
-<br>
-<code>cormatrix1 <- corKB(x, x, use="pairwise.complete.obs", method="pearson"); cormatrix2 <- corKB(x, y)</code></li>
-</ol>
-
 <h1>Credits</h1>
 <ul>
   <li>Kevin Blighe (Brigham & Women's Hospital / Harvard Medical School)</li>
