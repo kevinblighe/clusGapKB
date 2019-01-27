@@ -1,6 +1,8 @@
 # clusGapKB
 <h1>Parallelised Gap statistic (Tibshirani et al., 2001) calculation and clustering</h1>
 <br>
+NB - further information on Biostars: https://www.biostars.org/p/273107/
+<br>
 <ol type="i">
   <li>Load <i>doParallel</i>
 <br>
