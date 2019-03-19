@@ -6,7 +6,7 @@ NB - further information on usage in my Biostars post: https://www.biostars.org/
 <h2>References:</h2>
 Tibshirani R, Walther G, Hastie T (2001), Estimating the number of data clusters via the Gap statistic, Journal of the Royal Statistical Society B. 63: 411–423.
 
-<h1>Credits</h1>
+<h2>Credits</h2>
 <ul>
   <li>Kevin Blighe (Brigham & Women's Hospital / Harvard Medical School)</li>
 </ul>
